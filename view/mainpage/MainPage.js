@@ -63,10 +63,6 @@ export const changelang = () => {
  
 }; 
 
-const getbootloader = ()=>{
-  
-}
-
 export default function MainPage({navigation}) {
 
 
@@ -90,8 +86,9 @@ export default function MainPage({navigation}) {
           }}>
           <LeftSide nav={navigation}></LeftSide>
           <RightSide nav={navigation}></RightSide>
+
         </View>
-       
+       <Text>This version is limited version you can search in google play for pharmaclone and fine payment version </Text>
 
 
       

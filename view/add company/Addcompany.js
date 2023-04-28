@@ -46,7 +46,7 @@ export default function AddCompany() {
           style={tw`border-2 h-10    rounded-xl bg-black  justify-center items-center text-center m-1 self-center`}
           onPress={async () => {
               if(GeneralSchiam.objects('company').length>3){
-      Alert.alert('you cant add to inventory more than >3 drug you can buy full featured applications in google play')
+      Alert.alert('you cant add more than >3 company you can buy full featured applications in google play')
       return false;
     }
             await GeneralSchiam.objects('company').map(data => {

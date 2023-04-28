@@ -4,7 +4,7 @@ import {View, Text, StyleSheet, TouchableOpacity, Platform} from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Octicons from 'react-native-vector-icons/Octicons';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+
 import { Lang } from '../MainPage';
 import tw from 'twrnc'
 export default function LeftSide({nav}) {
