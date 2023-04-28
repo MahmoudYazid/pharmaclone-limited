@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "53581266151",
+    "project_id": "pharmaclone-c9655",
+    "storage_bucket": "pharmaclone-c9655.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53581266151:android:8b11b5d38f8b75ea937642",
+        "android_client_info": {
+          "package_name": "com.pharmaclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53581266151-aedq79g8699h0cef59segh24qst7kl58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4YtReZWK7NT8rATPXBbN_uzlafsZNmL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53581266151-aedq79g8699h0cef59segh24qst7kl58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
