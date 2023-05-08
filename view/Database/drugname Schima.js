@@ -24,7 +24,9 @@ CompanySchema.schema={
 }
 ProcessSchima.schema = {
   name: 'process',
+  primaryKey: 'id',
   properties: {
+    id:'string',
     process: 'string',
     drugname: 'string',
     quantity: 'string',

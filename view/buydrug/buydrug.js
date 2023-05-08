@@ -126,8 +126,8 @@ const handleBarCodeScanned = ({ type, data }) => {
   
   // [drugname, quantity, unitprice, Selected_Company, BuyCode],
   const addTodb = () => {
-    if(GeneralSchiam.objects('drugs').length>20){
-      Alert.alert('you cant add to inventory more than 20 drug you can buy full featured applications in google play')
+    if(GeneralSchiam.objects('drugs').length>5){
+      Alert.alert('you cant add to inventory more than 5 drug you can buy full featured applications in google play')
       return false;
     }
     Cart_.map(CartMapItem => {

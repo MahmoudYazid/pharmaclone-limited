@@ -25,6 +25,7 @@ export const addprocess = (
 ) => {
   GeneralSchiam.write(() => {
     GeneralSchiam.create('process', {
+      id:String(GeneralSchiam.objects('process').length+1),
       process: String(process_param),
       drugname: String(drugname_param),
       quantity: String(Quantity_param),

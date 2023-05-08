@@ -127,15 +127,12 @@ return (
 
 
                   })
+                  const objectToDelete = GeneralSchiam.objectForPrimaryKey('process', item.id);
                    GeneralSchiam.write(()=>{
-                    GeneralSchiam.objects('process').map((processitem)=>{
-      if(processitem.date == item.date && processitem.drugname === item.drugname && processitem.process== item.process){
-        GeneralSchiam.delete(processitem)
-          Alert.alert('proccess deleted')
-      
-      }
+                     GeneralSchiam.delete(objectToDelete)
 
-    });
+                     Alert.alert('proccess deleted')
+
 
                    })
                   //delete proccess
@@ -145,7 +142,7 @@ return (
               }])
             }}
             >
-              <Text>New Proccess</Text>
+            <Text>New Proccess : {item.id}</Text>
             <Text
               style={{
                 display: 'flex',

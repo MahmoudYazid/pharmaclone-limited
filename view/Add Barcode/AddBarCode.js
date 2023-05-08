@@ -62,8 +62,8 @@ const BarcodeScanner = () => {
     setCameraOpen(false);
   };
   const AddBarCodeFuc=() => {
-      if(GeneralSchiam.objects('barcode').length>20){
-      Alert.alert('you cant add barcode more than 20 drug you can buy full featured applications in google play')
+      if(GeneralSchiam.objects('barcode').length>1){
+      Alert.alert('you cant add barcode more than 1 drug you can buy full featured applications in google play')
       return false;
     }
     let findValue_ = false
