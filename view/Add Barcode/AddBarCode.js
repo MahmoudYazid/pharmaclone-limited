@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable keyword-spacing */
+/* eslint-disable no-trailing-spaces */
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import React, { useState,useEffect } from 'react';
@@ -62,10 +65,7 @@ const BarcodeScanner = () => {
     setCameraOpen(false);
   };
   const AddBarCodeFuc=() => {
-      if(GeneralSchiam.objects('barcode').length>1){
-      Alert.alert('you cant add barcode more than 1 drug you can buy full featured applications in google play')
-      return false;
-    }
+     
     let findValue_ = false
     GeneralSchiam.objects('barcode').map((findValue)=>{
       if(findValue.barcode === barcodeData){
