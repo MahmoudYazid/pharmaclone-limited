@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "904888683692",
+    "project_id": "pharmacloneads",
+    "storage_bucket": "pharmacloneads.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904888683692:android:b4a6f344e297506e116309",
+        "android_client_info": {
+          "package_name": "com.pharmaclonetrailer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904888683692-sbr0phmaqlllcudvirq6p8u41217tehn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-TRK1763lTtE-c5ptXMRqGRR0VOijKI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904888683692-sbr0phmaqlllcudvirq6p8u41217tehn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

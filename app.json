@@ -1,4 +1,9 @@
 {
   "name": "pharmaclonetrailer",
-  "displayName": "pharmaclonetrailer"
+  "displayName": "pharmaclonetrailer",
+
+  "react-native-google-mobile-ads": {
+      "android_app_id": "ca-app-pub-9048954636635016~3358017195"
+      
+    }
 }

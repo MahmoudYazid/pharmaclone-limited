@@ -7,7 +7,17 @@ import Octicons from 'react-native-vector-icons/Octicons';
 
 import { Lang } from '../MainPage';
 import tw from 'twrnc'
+
+
+
+
+
+
 export default function LeftSide({nav}) {
+
+
+
+
      const [WordBuyDrug, SetWordBuyDrug] = useState('Buy Drug');
      const [WordSellDrug, SetWordSellDrug] = useState('Sell Drug');
      const [WordInventory, SetWordInventory] = useState('Inventory');
@@ -48,7 +58,7 @@ export default function LeftSide({nav}) {
         onPress={() => {
           
           
-
+    
           nav.navigate('buydrug');
         }}>
         <AntDesign
@@ -57,7 +67,7 @@ export default function LeftSide({nav}) {
           size={50}
           onPress={() => {
             
-            
+      
 
             nav.navigate('buydrug');
           }}></AntDesign>
@@ -66,7 +76,7 @@ export default function LeftSide({nav}) {
           onPress={() => {
             
             
-
+      
             nav.navigate('buydrug');
           }}>
           {WordBuyDrug}

@@ -6,11 +6,11 @@ import React,{useEffect} from 'react'
 import {View, Text} from 'react-native';
 import LeftSide from './LeftSide/LeftSide';
 import RightSide from './RightSide/RightSide';
-import Title from './Title/title';
+
 import {NativeModules} from 'react-native';
 import GeneralSchiam from '../Database/drugname Schima';
 
-import tw from 'twrnc';
+
 export let Lang='';
 
 export const setLang = () =>{
@@ -32,6 +32,7 @@ export const setLang = () =>{
   
 } 
 export const changelang = () => {
+  
   GeneralSchiam.write(()=>{
     for(let data of  GeneralSchiam.objects('lang')){
        if (data.lang === 'English') {
@@ -71,9 +72,8 @@ export default function MainPage({navigation}) {
  
    setLang();
 
- 
- 
 
+ 
   return (
     <>
       <View style={{flexDirection: 'column', flex: 1}}>
@@ -88,11 +88,7 @@ export default function MainPage({navigation}) {
           <RightSide nav={navigation}></RightSide>
 
         </View>
-       <Text>This version is limited version you can search in google play for pharmaclone and fine payment version </Text>
 
-
-      
-       
 
       </View>
     </>

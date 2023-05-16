@@ -7,9 +7,6 @@ import GeneralSchiam from '../Database/drugname Schima';
 
 import { Lang } from '../mainpage/MainPage';
 
-
-
-
 var Total = 0;
 const Calc = () => {
    GeneralSchiam.write(() => {
@@ -27,6 +24,7 @@ const Calc = () => {
 };
 
 export default function Profit() {
+ 
   const [WordTotalProfit, SetWordTotalProfit] = useState('Total Profit');
 
   const changeWords = () => {
