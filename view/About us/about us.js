@@ -25,12 +25,12 @@ export default function About_us() {
           <TouchableOpacity
             style={style_.Facebook}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/CloneWebsites');
+              Linking.openURL('https://www.facebook.com/RobotikCo');
             }}>
             <Text
               style={tw`text-center text-white`}
               onPress={() => {
-                Linking.openURL('https://www.facebook.com/CloneWebsites');
+                Linking.openURL('https://www.facebook.com/RobotikCo');
               }}>
               facebook
             </Text>
