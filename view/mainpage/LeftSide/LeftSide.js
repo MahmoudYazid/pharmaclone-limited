@@ -9,15 +9,15 @@ import { Lang } from '../MainPage';
 import tw from 'twrnc'
 
 
-
+import { InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile-ads';
 
 
 
 export default function LeftSide({nav}) {
 
+  const adUnitId = 'ca-app-pub-1373720375820476/5168911406';
 
-
-
+      const keywordads=['health','drugs','healthy','pharmacy','hospitals','games','pc','computers']
      const [WordBuyDrug, SetWordBuyDrug] = useState('Buy Drug');
      const [WordSellDrug, SetWordSellDrug] = useState('Sell Drug');
      const [WordInventory, SetWordInventory] = useState('Inventory');
@@ -57,7 +57,16 @@ export default function LeftSide({nav}) {
         style={tw`flex-2 w-50 h-50 bg-white justify-center text-black`}
         onPress={() => {
           
-          
+          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+            keywords:keywordads
+          });
+          interstitial.load();
+          setTimeout(() => {
+
+
+            interstitial.show();
+          }, 5000);
     
           nav.navigate('buydrug');
         }}>
@@ -67,7 +76,16 @@ export default function LeftSide({nav}) {
           size={50}
           onPress={() => {
             
-      
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
 
             nav.navigate('buydrug');
           }}></AntDesign>
@@ -76,7 +94,16 @@ export default function LeftSide({nav}) {
           onPress={() => {
             
             
-      
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
             nav.navigate('buydrug');
           }}>
           {WordBuyDrug}
@@ -87,7 +114,16 @@ export default function LeftSide({nav}) {
         onPress={() => {
           
           
+          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
 
+            keywords: keywordads
+          });
+          interstitial.load();
+          setTimeout(() => {
+
+
+            interstitial.show();
+          }, 5000);
           nav.navigate('SellPage');
         }}>
         <AntDesign
@@ -96,7 +132,16 @@ export default function LeftSide({nav}) {
           size={50}
           onPress={() => {
             
-            
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
 
             nav.navigate('SellPage');
           }}></AntDesign>
@@ -105,7 +150,16 @@ export default function LeftSide({nav}) {
           onPress={() => {
             
             
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
 
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
             nav.navigate('SellPage');
           }}>
           {WordSellDrug}
@@ -116,7 +170,16 @@ export default function LeftSide({nav}) {
         style={tw`flex-2 w-50 h-50 bg-white text-black`}
         onPress={() => {
           
-          
+          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+            keywords: keywordads
+          });
+          interstitial.load();
+          setTimeout(() => {
+
+
+            interstitial.show();
+          }, 5000);
 
           nav.navigate('inventory');
         }}>
@@ -127,14 +190,32 @@ export default function LeftSide({nav}) {
           onPress={() => {
             
             
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
 
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
             nav.navigate('inventory');
           }}></MaterialIcons>
         <Text
           style={tw`text-center text-black`}
           onPress={() => {
             
-            
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
 
             nav.navigate('inventory');
           }}>
@@ -146,7 +227,16 @@ export default function LeftSide({nav}) {
         style={tw`flex-2 w-50 h-50 bg-white  text-black`}
         onPress={() => {
        
+          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
 
+            keywords: keywordads
+          });
+          interstitial.load();
+          setTimeout(() => {
+
+
+            interstitial.show();
+          }, 5000);
           nav.navigate('addcompany');
         }}>
         <Octicons
@@ -155,14 +245,32 @@ export default function LeftSide({nav}) {
           size={50}
           onPress={() => {
    
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
 
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
             nav.navigate('addcompany');
           }}></Octicons>
         <Text
           style={tw`text-center text-black`}
           onPress={() => {
             
-            
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
 
             nav.navigate('addcompany');
           }}>
@@ -172,7 +280,16 @@ export default function LeftSide({nav}) {
       <TouchableOpacity
         style={tw`flex-2 w-50 h-50 bg-white  text-black`}
         onPress={() => {
-       
+          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+            keywords: keywordads
+          });
+          interstitial.load();
+          setTimeout(() => {
+
+
+            interstitial.show();
+          }, 5000);
           nav.navigate('Addbarcode');
         }}>
         <AntDesign
@@ -181,14 +298,32 @@ export default function LeftSide({nav}) {
           size={50}
           onPress={() => {
            
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
 
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
             nav.navigate('Addbarcode');
           }}></AntDesign>
         <Text
           style={tw`text-center text-black`}
           onPress={() => {
            
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
 
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
             nav.navigate('Addbarcode');
           }}>
           {WordAddbarcode}

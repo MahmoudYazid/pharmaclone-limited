@@ -18,6 +18,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import GeneralSchiam from '../../Database/drugname Schima';
 import { Alert } from 'react-native';
 import { Lang, changelang } from '../MainPage';
+import { InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile-ads';
 
 const DeleteAll =()=>{
     GeneralSchiam.write(() => {
@@ -26,7 +27,8 @@ const DeleteAll =()=>{
     });
 }
 export default function RightSide({nav}) {
-
+  const keywordads = ['health', 'drugs', 'healthy', 'pharmacy', 'hospitals', 'games', 'pc', 'computers']
+  const adUnitId = 'ca-app-pub-1373720375820476/5168911406';
   const [WordProccess, SetWordProccess] = useState('All Proccess');
   const [WordProfit, SetWordProfit] = useState('profit');
   const [WordAboutUs, SetAboutUs] = useState('About us');
@@ -54,39 +56,80 @@ export default function RightSide({nav}) {
         }
   
   }
+
+
+  
+
   useEffect(() => {
     changeWords();
-  }, []);
-  
-  
+   
+   
+
+    
+      
+    
+ 
+ 
+  },[]);
 
 
+
+  
   return (
     <View style={tw`flex-1 bg-white w-50 flex-col   justify-center text-black`}>
       <View style={tw`flex-2 w-50 h-50 bg-white justify-center text-black `}>
         <TouchableOpacity
           style={tw`flex-2 w-50 h-50 bg-white justify-center text-black`}
-          onPress={() => {
-            
-            
+          onPress={  () => {
+         
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
 
-            nav.navigate('profit');
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
+              nav.navigate('profit');
+          
           }}>
           <FontAwesome
             style={tw`text-center text-black`}
             name="money"
             size={50}
-            onPress={() => {
-              
-              
-              nav.navigate('profit');
+            onPress={ () => {
+         
+              const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+                keywords: keywordads
+              });
+              interstitial.load();
+              setTimeout(() => {
+
+
+                interstitial.show();
+              }, 5000);
+
+                nav.navigate('profit');
             }}></FontAwesome>
           <Text
             style={tw`text-center text-black`}
-            onPress={() => {
-              
-              
-              nav.navigate('profit');
+            onPress={ () => {
+            
+              const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+                keywords: keywordads
+              });
+              interstitial.load();
+              setTimeout(() => {
+
+
+                interstitial.show();
+              }, 5000);
+               nav.navigate('profit');
+           
             }}>
             {WordProfit}
           </Text>
@@ -98,7 +141,16 @@ export default function RightSide({nav}) {
           style={tw`flex-2 w-50 h-50 bg-white justify-center text-black`}
           onPress={() => {
             
-            
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
             nav.navigate('proccess');
           }}>
           <AntDesign
@@ -106,7 +158,16 @@ export default function RightSide({nav}) {
             style={tw`text-center text-black`}
             size={50}
             onPress={() => {
-              
+              const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+                keywords: keywordads
+              });
+              interstitial.load();
+              setTimeout(() => {
+
+
+                interstitial.show();
+              }, 5000);
               
               nav.navigate('proccess');
             }}></AntDesign>
@@ -114,7 +175,16 @@ export default function RightSide({nav}) {
             style={tw`text-center text-black`}
             onPress={() => {
               
-              
+              const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+                keywords: keywordads
+              });
+              interstitial.load();
+              setTimeout(() => {
+
+
+                interstitial.show();
+              }, 5000);
               nav.navigate('proccess');
             }}>
             {WordProccess}
@@ -126,7 +196,16 @@ export default function RightSide({nav}) {
           style={tw`flex-2 w-50 h-50 bg-white justify-center text-black`}
           onPress={() => {
             
-            
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
             nav.navigate('about');
           }}>
           <Entypo
@@ -135,14 +214,32 @@ export default function RightSide({nav}) {
             size={50}
             onPress={() => {
               
-              
+              const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+                keywords: keywordads
+              });
+              interstitial.load();
+              setTimeout(() => {
+
+
+                interstitial.show();
+              }, 5000);
               nav.navigate('about');
             }}></Entypo>
           <Text
             style={tw`text-center text-black`}
             onPress={() => {
               
-              
+              const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+                keywords: keywordads
+              });
+              interstitial.load();
+              setTimeout(() => {
+
+
+                interstitial.show();
+              }, 5000);
               nav.navigate('about');
             }}>
             {WordAboutUs}
@@ -240,7 +337,16 @@ export default function RightSide({nav}) {
             <TouchableOpacity
         style={tw`flex-2 w-50 h-50 bg-white justify-center text-black`}
         onPress={() => {
-       
+          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+
+            keywords: keywordads
+          });
+          interstitial.load();
+          setTimeout(() => {
+
+
+            interstitial.show();
+          }, 5000);
           nav.navigate('allbarcode');
         }}>
         <AntDesign
@@ -249,14 +355,32 @@ export default function RightSide({nav}) {
           size={50}
           onPress={() => {
            
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
 
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
             nav.navigate('allbarcode');
           }}></AntDesign>
         <Text
           style={tw`text-center text-black`}
           onPress={() => {
            
+            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
 
+              keywords: keywordads
+            });
+            interstitial.load();
+            setTimeout(() => {
+
+
+              interstitial.show();
+            }, 5000);
             nav.navigate('allbarcode');
           }}>
           {WordAllbarcode}
