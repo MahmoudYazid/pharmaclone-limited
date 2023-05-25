@@ -19,7 +19,7 @@ export default function About_us() {
  
   return (
     <View style={style_.container}>
-      <Title></Title>
+      
       <View style={style_.container2}>
         <View style={style_.WordsContainer2}>
           <TouchableOpacity

@@ -15,7 +15,6 @@ import { InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile
 
 export default function LeftSide({nav}) {
 
-  const adUnitId = 'ca-app-pub-1373720375820476/5168911406';
 
       const keywordads=['health','drugs','healthy','pharmacy','hospitals','games','pc','computers']
      const [WordBuyDrug, SetWordBuyDrug] = useState('Buy Drug');
@@ -57,7 +56,7 @@ export default function LeftSide({nav}) {
         style={tw`flex-2 w-50 h-50 bg-white justify-center text-black`}
         onPress={() => {
           
-          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+          const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/9739507965', {
 
             keywords:keywordads
           });
@@ -76,7 +75,7 @@ export default function LeftSide({nav}) {
           size={50}
           onPress={() => {
             
-            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+            const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/9739507965', {
 
               keywords: keywordads
             });
@@ -94,7 +93,7 @@ export default function LeftSide({nav}) {
           onPress={() => {
             
             
-            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+            const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/9739507965', {
 
               keywords: keywordads
             });
@@ -114,7 +113,7 @@ export default function LeftSide({nav}) {
         onPress={() => {
           
           
-          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+          const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/9224857866', {
 
             keywords: keywordads
           });
@@ -132,7 +131,7 @@ export default function LeftSide({nav}) {
           size={50}
           onPress={() => {
             
-            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+            const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/9224857866', {
 
               keywords: keywordads
             });
@@ -150,7 +149,7 @@ export default function LeftSide({nav}) {
           onPress={() => {
             
             
-            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+            const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/9224857866', {
 
               keywords: keywordads
             });
@@ -170,7 +169,7 @@ export default function LeftSide({nav}) {
         style={tw`flex-2 w-50 h-50 bg-white text-black`}
         onPress={() => {
           
-          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+          const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/4536951044', {
 
             keywords: keywordads
           });
@@ -190,7 +189,7 @@ export default function LeftSide({nav}) {
           onPress={() => {
             
             
-            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+            const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/4536951044', {
 
               keywords: keywordads
             });
@@ -206,7 +205,7 @@ export default function LeftSide({nav}) {
           style={tw`text-center text-black`}
           onPress={() => {
             
-            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+            const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/4536951044', {
 
               keywords: keywordads
             });
@@ -227,7 +226,7 @@ export default function LeftSide({nav}) {
         style={tw`flex-2 w-50 h-50 bg-white  text-black`}
         onPress={() => {
        
-          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+          const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/5954846638', {
 
             keywords: keywordads
           });
@@ -245,7 +244,7 @@ export default function LeftSide({nav}) {
           size={50}
           onPress={() => {
    
-            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+            const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/5954846638', {
 
               keywords: keywordads
             });
@@ -261,7 +260,7 @@ export default function LeftSide({nav}) {
           style={tw`text-center text-black`}
           onPress={() => {
             
-            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+            const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/5954846638', {
 
               keywords: keywordads
             });
@@ -280,7 +279,7 @@ export default function LeftSide({nav}) {
       <TouchableOpacity
         style={tw`flex-2 w-50 h-50 bg-white  text-black`}
         onPress={() => {
-          const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+          const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/2015601624', {
 
             keywords: keywordads
           });
@@ -298,7 +297,7 @@ export default function LeftSide({nav}) {
           size={50}
           onPress={() => {
            
-            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+            const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/2015601624', {
 
               keywords: keywordads
             });
@@ -314,7 +313,7 @@ export default function LeftSide({nav}) {
           style={tw`text-center text-black`}
           onPress={() => {
            
-            const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+            const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-1373720375820476/2015601624', {
 
               keywords: keywordads
             });
