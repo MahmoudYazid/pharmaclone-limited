@@ -72,7 +72,7 @@ export default function RightSide({nav}) {
  
   },[]);
 
-
+  const duration = 20000;
 
   
   return (
@@ -91,7 +91,7 @@ export default function RightSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
               nav.navigate('profit');
           
           }}>
@@ -110,7 +110,7 @@ export default function RightSide({nav}) {
 
 
                 interstitial.show();
-              }, 5000);
+              }, duration);
 
                 nav.navigate('profit');
             }}></FontAwesome>
@@ -127,7 +127,7 @@ export default function RightSide({nav}) {
 
 
                 interstitial.show();
-              }, 5000);
+              }, duration);
                nav.navigate('profit');
            
             }}>
@@ -150,7 +150,7 @@ export default function RightSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
             nav.navigate('proccess');
           }}>
           <AntDesign
@@ -167,7 +167,7 @@ export default function RightSide({nav}) {
 
 
                 interstitial.show();
-              }, 5000);
+              }, duration);
               
               nav.navigate('proccess');
             }}></AntDesign>
@@ -184,7 +184,7 @@ export default function RightSide({nav}) {
 
 
                 interstitial.show();
-              }, 5000);
+              }, duration);
               nav.navigate('proccess');
             }}>
             {WordProccess}
@@ -205,7 +205,7 @@ export default function RightSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
             nav.navigate('about');
           }}>
           <Entypo
@@ -223,7 +223,7 @@ export default function RightSide({nav}) {
 
 
                 interstitial.show();
-              }, 5000);
+              }, duration);
               nav.navigate('about');
             }}></Entypo>
           <Text
@@ -239,7 +239,7 @@ export default function RightSide({nav}) {
 
 
                 interstitial.show();
-              }, 5000);
+              }, duration);
               nav.navigate('about');
             }}>
             {WordAboutUs}
@@ -346,7 +346,7 @@ export default function RightSide({nav}) {
 
 
             interstitial.show();
-          }, 5000);
+          }, duration);
           nav.navigate('allbarcode');
         }}>
         <AntDesign
@@ -364,7 +364,7 @@ export default function RightSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
             nav.navigate('allbarcode');
           }}></AntDesign>
         <Text
@@ -380,7 +380,7 @@ export default function RightSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
             nav.navigate('allbarcode');
           }}>
           {WordAllbarcode}

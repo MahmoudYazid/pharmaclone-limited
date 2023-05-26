@@ -49,7 +49,7 @@ export default function LeftSide({nav}) {
      useEffect(() => {
        changeWords();
      }, []);
-  
+  const duration = 20000;
   return (
     <View style={tw` flex-1 bg-white w-50 flex-col  items-center justify-center text-black`}>
       <TouchableOpacity
@@ -65,7 +65,7 @@ export default function LeftSide({nav}) {
 
 
             interstitial.show();
-          }, 5000);
+          }, duration);
     
           nav.navigate('buydrug');
         }}>
@@ -84,7 +84,7 @@ export default function LeftSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
 
             nav.navigate('buydrug');
           }}></AntDesign>
@@ -102,7 +102,7 @@ export default function LeftSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
             nav.navigate('buydrug');
           }}>
           {WordBuyDrug}
@@ -122,7 +122,7 @@ export default function LeftSide({nav}) {
 
 
             interstitial.show();
-          }, 5000);
+          }, duration);
           nav.navigate('SellPage');
         }}>
         <AntDesign
@@ -140,7 +140,7 @@ export default function LeftSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
 
             nav.navigate('SellPage');
           }}></AntDesign>
@@ -158,7 +158,7 @@ export default function LeftSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
             nav.navigate('SellPage');
           }}>
           {WordSellDrug}
@@ -178,7 +178,7 @@ export default function LeftSide({nav}) {
 
 
             interstitial.show();
-          }, 5000);
+          }, duration);
 
           nav.navigate('inventory');
         }}>
@@ -198,7 +198,7 @@ export default function LeftSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
             nav.navigate('inventory');
           }}></MaterialIcons>
         <Text
@@ -214,7 +214,7 @@ export default function LeftSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
 
             nav.navigate('inventory');
           }}>
@@ -235,7 +235,7 @@ export default function LeftSide({nav}) {
 
 
             interstitial.show();
-          }, 5000);
+          }, duration);
           nav.navigate('addcompany');
         }}>
         <Octicons
@@ -253,7 +253,7 @@ export default function LeftSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
             nav.navigate('addcompany');
           }}></Octicons>
         <Text
@@ -269,7 +269,7 @@ export default function LeftSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
 
             nav.navigate('addcompany');
           }}>
@@ -288,7 +288,7 @@ export default function LeftSide({nav}) {
 
 
             interstitial.show();
-          }, 5000);
+          }, duration);
           nav.navigate('Addbarcode');
         }}>
         <AntDesign
@@ -306,7 +306,7 @@ export default function LeftSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
             nav.navigate('Addbarcode');
           }}></AntDesign>
         <Text
@@ -322,7 +322,7 @@ export default function LeftSide({nav}) {
 
 
               interstitial.show();
-            }, 5000);
+            }, duration);
             nav.navigate('Addbarcode');
           }}>
           {WordAddbarcode}
